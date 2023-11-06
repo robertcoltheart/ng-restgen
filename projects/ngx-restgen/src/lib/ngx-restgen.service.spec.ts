@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { NgxRestgenService } from './ngx-restgen.service';
 
 describe('NgxRestgenService', () => {

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NgxRestgenComponent } from './ngx-restgen.component';
 
 describe('NgxRestgenComponent', () => {
