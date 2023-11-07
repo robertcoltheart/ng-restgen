@@ -1,13 +1,9 @@
-import {
-  OpenAPIObject,
-  OperationObject,
-  PathItemObject,
-  ReferenceObject,
-  SchemaObject
-} from '@loopback/openapi-v3-types';
-
 export class Generator {
-  generate(): void {
-    const a = OpenAPIObject.abc;
+  constructor(private configFile: string) {
+    console.log(configFile);
+  }
+
+  generate() {
+    console.log('write output');
   }
 }

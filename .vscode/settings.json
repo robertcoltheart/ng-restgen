@@ -1,0 +1,7 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?LinkId=808995
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
