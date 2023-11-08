@@ -17,7 +17,7 @@
     "ngx-restgen": "./bin/index.js"
   },
   "dependencies": {
-    "@readme/openapi-parser": "^2.5.0",
+    "@apidevtools/swagger-parser": "^10.1.0",
     "commander": "^11.1.0",
     "eol": "^0.9.1",
     "mustache": "^4.2.0"
