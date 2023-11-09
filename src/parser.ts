@@ -29,7 +29,7 @@ export class Parser {
     if (operation) {
       const id = this.getMethodName(method, path, operation);
 
-      this.services.set(id, new Service());
+      this.services.set(id, new Service(id, method, path, operation.tags));
     }
   }
 

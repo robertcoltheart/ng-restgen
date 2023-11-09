@@ -1,3 +1,3 @@
 export class Service {
-  constructor(private tags?: string[]) {}
+  constructor(id: string, method: string, path: string, tags?: string[]) {}
 }
