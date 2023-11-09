@@ -1,6 +1,5 @@
 import { OpenAPI } from 'openapi-types';
 import { Model } from './model';
-import SwaggerParser from '@apidevtools/swagger-parser';
 
 export class Parser {
   models = new Map<string, Model>();
