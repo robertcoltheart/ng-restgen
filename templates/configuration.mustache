@@ -1,0 +1,14 @@
+/* tslint:disable */
+/* eslint-disable */
+import { Injectable } from "@angular/core";
+
+@Injectable({
+  providedIn: 'root',
+})
+export class {{prefix}}Configuration {
+  rootUrl: string = '';
+}
+
+export interface {{prefix}}ConfigurationParams {
+  rootUrl?: string;
+}

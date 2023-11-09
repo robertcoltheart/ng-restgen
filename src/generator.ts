@@ -10,6 +10,7 @@ export class Generator {
       const document = await SwaggerParser.validate(api.input);
 
       const parser = new Parser(document);
+      parser.parse();
 
       console.log(document);
     }

@@ -1,0 +1,27 @@
+/* tslint:disable */
+/* eslint-disable */
+import { ModuleWithProviders, NgModule } from "@angular/core";
+import { {{prefix}}Configuration, {{prefix}}ConfigurationParams } from "./{{filePrefix}}-configuration";
+{{#services}}import { {{typeName}} } from "./services/{{fileName}}.service";
+{{/services}}
+
+@NgModule({
+  providers: [
+{{#services}}    {{typeName}},
+{{/services}}
+  {{prefix}}Configuration
+  ]
+})
+export class {{prefix}}Module {
+  static forRoot(params: {{prefix}}ConfigurationParams): ModuleWithProviders<{{prefix}}Module> {
+    return {
+      ngModule: {{prefix}}Module,
+      providers: [
+        {
+          provide: {{prefix}}Configuration,
+          useValue: params
+        }
+      ]
+    }
+  }
+}
